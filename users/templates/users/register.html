@@ -1,0 +1,89 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block content %}
+  <div class="wrapper register-page full-screen sidebar-collapse">
+    <div class="page-header" style="background-image: url('{% static 'blog/img/sections/soroush-karimi.jpg' %}');">
+      <div class="filter"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-7 col-12 ml-auto">
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-umbrella"></i>
+              </div>
+              <div class="description">
+                <h3> We've got you covered </h3>
+                <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. Everything you need in a single case.</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-map-signs"></i>
+              </div>
+              <div class="description">
+                <h3> Clear Directions </h3>
+                <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.</p>
+              </div>
+            </div>
+            <div class="info info-horizontal">
+              <div class="icon">
+                <i class="fa fa-user-secret"></i>
+              </div>
+              <div class="description">
+                <h3> We value your privacy </h3>
+                <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-5 col-12 mr-auto">
+            <div class="card card-register">
+              <h3 class="card-title text-center">Register</h3>
+               <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group" color='black'>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            </div>
+        </form>
+        <div class="login border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="#">Sign In</a>
+            </small>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{% static 'blog/js/plugins/bootstrap-switch.js' %}" ype="text/javascript"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{% static 'blog/js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="{% static 'blog/js/plugins/moment.min.js' %}"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="{% static 'blog/js/plugins/bootstrap-tagsinput.js' %}"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="{% static 'blog/js/plugins/bootstrap-selectpicker.js' %}" type="text/javascript"></script>
+  <!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="{% static 'blog/js/plugins/bootstrap-datetimepicker.js' %}" type="text/javascript"></script>
+  <!--  Vertical nav - dots -->
+  <!--  Photoswipe files -->
+  <script src="{% static 'blog/js/plugins/photo_swipe/photoswipe.min.js' %}"></script>
+  <script src="{% static 'blog/js/plugins/photo_swipe/photoswipe-ui-default.min.js' %}"></script>
+  <script src="{% static 'blog/js/plugins/photo_swipe/init-gallery.js' %}"></script>
+  <!--  for Jasny fileupload -->
+  <script src="{% static 'blog/js/plugins/jasny-bootstrap.min.js' %}"></script>
+  <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{% static 'blog/js/paper-kit.js' %}" type="text/javascript"></script>
+  <!--  Google Maps Plugin    -->
+  <script type="text/javascript" src="{% static 'https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE' %}"></script>
+  <!--  Plugin for presentation page - isometric cards  -->
+  <script src="{% static 'blog/js/plugins/presentation-page/main.js' %}"></script>
+{% endblock content %}

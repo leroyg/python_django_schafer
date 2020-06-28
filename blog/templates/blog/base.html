@@ -57,19 +57,14 @@
         </button>
       </div>
     
-      <div class="collapse navbar-collapse" data-nav-image="../assets/img/blurred-image-1.jpg" data-color="orange">
+      <div class="collapse navbar-collapse" data-nav-image="{% static '/img/blurred-image-1.jpg' %}" data-color="orange">
         <ul class="navbar-nav ml-auto">
-              {% comment %} <li class="nav-item">
-            <a class="btn btn-round btn-danger" href="#" target="_blank">
-              <i class="nc-icon nc-single-02"></i> Register / Login
-            </a>
-          </li> {% endcomment %}
           <li class="dropdown nav-item">
             <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
               Menu
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-danger" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" datat-scroll="true" data-id="#register" href="#">
+              <a class="dropdown-item" datat-scroll="true" data-id="#register" href="{% url "register" %}">
                 <i class="nc-icon nc-single-02"></i> Register / Login
                 </a>
               <a class="dropdown-item" data-scroll="true" data-id="#home" href="{% url 'blog-home' %}">

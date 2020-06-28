@@ -1,10 +1,17 @@
 {% extends "blog/base.html" %}
   {% block content %}
-    {% for post in posts %}
       <div class="wrapper">
       <div class="main">
         <div class="section section-white">
           <div class="container">
+                {% if messages %}
+                  {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}"> 
+                      {{ message }}
+                    </div>
+                  {% endfor %}
+                {% endif %}
+            {% for post in posts %}
             <div class="row">
               <div class="col-md-6 ml-auto mr-auto text-center title">
                 <h2>{{ post.title }}</h2>
@@ -36,6 +43,5 @@
               </div>
             </div>
           </div>
-
     {% endfor %}
   {% endblock content %}
