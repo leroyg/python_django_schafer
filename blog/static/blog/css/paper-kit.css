@@ -12490,7 +12490,7 @@ a.pswp__share--download:hover {
 .full-screen.register-page .demo-card,
 .full-screen.register-page .card-register {
   background-color: #FFFFFF;
-  max-width: 360px;
+  max-width: 90%;
 }
 
 .full-screen.register-page .demo-card input,
