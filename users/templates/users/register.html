@@ -42,11 +42,11 @@
               <div class="card card-register">
                 <h3 class="card-title text-center">Register</h3>
                 <form method="POST">
-              {% csrf_token %}
-              <fieldset class="form-group">
-                  {{ form|crispy }}
-              </fieldset>
-              <div class="form-group">
+                  {% csrf_token %}
+                    <fieldset class="form-group">
+                      {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
                   <button class="btn btn-outline-info" type="submit">Sign Up</button>
               </div>
           </form>

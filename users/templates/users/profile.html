@@ -1,8 +1,11 @@
 {% extends 'blog/base.html'%}
 {% load static %}
 {% load crispy_forms_tags %}
-{% block content %}
 
+{% block content %}
+  <div>
+    <h1>Profile Page</h1>
+  <div>
     <div class="content-section">
       <div class="media">
         <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
@@ -11,6 +14,18 @@
           <p class="text-secondary">{{ user.email }}</p>
         </div>
       </div>
-      <!-- FORM HERE -->
+      <div class="col-lg-12 col-md-12 col-sm-5 col-12 mr-auto">
+        <div class="card card-register">
+          <h3 class="card-title text-center">Profile Info</h3>
+            <form method="POST" enctype="multipart/formdata">
+                  {% csrf_token %}
+                    <fieldset class="form-group">
+                      {{ u_form|crispy }}
+                      {{ p_form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                  <button class="btn btn-outline-info" type="submit">Update</button>
+              </div>
+          </form>
     </div>
 {% endblock content %}
