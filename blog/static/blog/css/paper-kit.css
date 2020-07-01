@@ -24,6 +24,19 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+#update-blog-container{
+  display: flex;
+  justify-content: center;
+  max-width:100%;
+}
+
+ #update-blog{
+  display: flex;
+  max-width: 100%;
+  align-content: center;
+  justify-content: center;
+  color: #00000100;
+ }
 
 .bootstrap-switch {
   display: inline-block;
