@@ -5,3 +5,5 @@ Dropdown info
 
 https://stackoverflow.com/questions/31130706/dropdown-in-django-model
 http://gregblogs.com/the-little-things-tlt-django-creating-a-drop-down-list-with-django/
+
+nc-simple-remove
