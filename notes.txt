@@ -1,4 +1,4 @@
-notes.txt
+
 profile_pics/ProfilePhotoWhiteBackground.jpg
 
 Dropdown info
@@ -7,3 +7,7 @@ https://stackoverflow.com/questions/31130706/dropdown-in-django-model
 http://gregblogs.com/the-little-things-tlt-django-creating-a-drop-down-list-with-django/
 
 nc-simple-remove
+
+Gmail all auth article
+
+https://medium.com/@whizzoe/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5
