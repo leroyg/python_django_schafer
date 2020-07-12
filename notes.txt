@@ -11,3 +11,12 @@ nc-simple-remove
 Gmail all auth article
 
 https://medium.com/@whizzoe/in-5-mins-set-up-google-login-to-sign-up-users-on-django-e71d5c38f5d5
+
+
+S3 upload issue, error on image upload "InvalidRequestThe authorization mechanism you have provided is not supported. Please use AWS4-HMAC-SHA256.06070B862E67B2F44LWFoEKziA/N7+4AxZkwsJAauJiWlayeNkaLqe7GCOFQva343LdWdXIYrebdD2Tl6OzH7WdcF+w="
+
+Solutions
+https://stackoverflow.com/questions/26533245/the-authorization-mechanism-you-have-provided-is-not-supported-please-use-aws4
+
+https://github.com/jschneier/django-storages/issues/687
+
